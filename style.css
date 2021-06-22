@@ -1,0 +1,140 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #000;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.diamond-row {
+  line-height: 0;
+  font-size: 0;
+  text-align: center;
+}
+.diamond-row:before,
+.diamond-row:after {
+  content: '';
+  display: table
+}
+.diamond-row:after {
+  clear: both
+}
+.diamond-row + .diamond-row {
+  margin-top: -161px
+}
+.diamond-cell {
+  display: inline-block;
+  width: 228px;
+  height: 228px;
+  margin: 46px;
+  overflow: hidden;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  vertical-align: top
+}
+.diamond-cell > .inner {
+  width: 322px;
+  height: 322px;
+  margin-top: -47px;
+  margin-left: -47px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.diamond-masthead-fix {
+  background-color: #000;
+  height: 60px;
+  margin-top: -100px;
+  width: 100%
+}
+.diamond-container {
+  height: 805px;
+  overflow: hidden;
+  position: relative;
+  text-align: center
+}
+.diamond-wrapper {
+  margin-top: 237px;
+  position: relative
+}
+.diamond-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3000px;
+  height: 800px;
+  margin: 0;
+  margin-top: -400px;
+  margin-left: -1500px;
+  font-size: 0;
+  -webkit-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0)
+}
+.diamond-cell > .inner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+.diamond-cell > .inner:not(.empty){
+  background-blend-mode: luminosity;
+  background-color: #000000;
+}
+.diamond-cell > .inner > .artist-txt{
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+  cursor: pointer;
+  height: 100%
+}
+.diamond-cell > .inner:not(.empty) > .artist-txt:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.62);
+}
+.diamond-cell > .inner > .artist-txt:first {
+  line-height: 320px
+}
+.diamond-cell > .inner > .artist-txt > .artist-name {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 130px;
+  width: 250px
+}
+.diamond-cell > .inner > .artist-txt >  .artist-url {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 10px
+}
+.diamond-cell a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+.diamond-cell a:hover,
+.diamond-cell a:focus {
+  color: #3eabff;
+  text-decoration: none
+}
+.diamond-cell a:hover {
+  color: #a9aeb0
+}
+.background{
+  position: absolute;
+  left: 7%;
+  right: 0;
+  top: 0;
+  background-color: black;
+  width: 86%;
+  height: 79.9%;
+}

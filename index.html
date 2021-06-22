@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  #loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    z-index: 999999;
+  }
+</style>
+
+<body>
+  <div id="loader">Loading...</div>
+  <div class="section content-stage">
+    <div class="diamond-container">
+      <div class="diamond-wrapper">
+        <div class="diamond-grid">
+          <div class="background"></div>
+          <div class="diamond-row">
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+          </div>
+          <div class="diamond-row">
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="diamond-row">
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="diamond-row">
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="diamond-row">
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+            <div class="diamond-cell">
+              <div class="inner empty"></div>
+            </div>
+            <div class="diamond-cell" data-artist="artist">
+              <div class="inner">
+                <div class="artist-txt">
+                  <span class="artist-name uppercase">Artist</span><p></p><br>
+                  <span class="artist-url"><a href="#" target="_blank">PROFILE</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var diamondCells = document.getElementsByClassName('inner');
+    console.log(diamondCells);
+    for (var i = 0; i < diamondCells.length; i++) {
+      var cell = diamondCells[i];
+      if (!cell.classList.contains('empty')) {
+        const rndInt = Math.floor(Math.random() * 300) + 1;
+        diamondCells[i].style.backgroundImage = `url(https://i.pravatar.cc/${100 + rndInt})`;
+      }
+    }
+    window.onload = function(){ document.getElementById("loader").style.display = "none" }
+  </script>
+</body>
+</html>
